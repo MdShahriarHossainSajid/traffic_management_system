@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Violation Checkboxes */
+#violations {
+    display: flex;
+    flex-direction: column;
+}
+
+#violations label {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.success {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dashboard-btn a {
+    text-decoration: none;
+}
+
+.dashboard-btn button {
+    width: 200px;
+    height: 50px;
+    background-color: #007BFF;
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard-btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .dashboard-btn button {
+        font-size: 16px;
+        width: 100%;
+    }
+}

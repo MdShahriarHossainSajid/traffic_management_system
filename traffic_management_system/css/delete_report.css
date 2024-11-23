@@ -1,0 +1,41 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Message Box */
+.message {
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+.message.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Error Message */
+.message.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .message {
+        width: 90%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
